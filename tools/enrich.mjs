@@ -3,8 +3,10 @@
 // 作用：用 dictionaryapi.dev 补上英文释义 / 例句 / 词性 / 音标
 import fs from 'node:fs/promises';
 
-const FILE  = process.argv[2] || 'data/words.json';
-const LIMIT = Number(process.env.LIMIT || 0);        // 0 = 全部处理
+const FILE    = process.argv[2] || 'data/words.json';
+const LIMIT   = Number(process.env.LIMIT || 0);   // 0 = 全部
+const CONC    = 5;       // 同时查 5 个词
+const TIMEOUT = 12000;   // 单个请求最多等 12 秒
 
 const POS = {
   noun:'n.', verb:'v.', adjective:'adj.', adverb:'adv.', pronoun:'pron.',
@@ -15,17 +17,22 @@ const POS = {
 const data = JSON.parse(await fs.readFile(FILE, 'utf8'));
 const list = LIMIT ? data.words.slice(0, LIMIT) : data.words;
 
-let ok = 0, skip = 0, miss = 0, done = 0;
+let ok = 0, skip = 0, miss = 0;
 
-for (const w of list) {
-  done++;
-  // 已经补过就跳过 —— 断了可以放心重跑
-  if (w.example?.en && w.defEn) { skip++; continue; }
-
+async function getJSON(url) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), TIMEOUT);
   try {
-    const r = await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(w.word));
+    const r = await fetch(url, { signal: ctrl.signal });
     if (!r.ok) throw new Error('HTTP ' + r.status);
-    const j  = await r.json();
+    return await r.json();
+  } finally { clearTimeout(t); }
+}
+
+async function enrichOne(w) {
+  if (w.example?.en && w.defEn) { skip++; return; }
+  try {
+    const j  = await getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(w.word));
     const e0 = Array.isArray(j) ? j[0] : null;
     if (!e0) throw new Error('无数据');
 
@@ -56,12 +63,15 @@ for (const w of list) {
     miss++;
     console.warn('✗', w.word, e.message);
   }
+}
 
-  if (done % 100 === 0) {
-    await fs.writeFile(FILE, JSON.stringify(data, null, 2));   // 每 100 词存一次盘
+for (let i = 0; i < list.length; i += CONC) {
+  await Promise.all(list.slice(i, i + CONC).map(enrichOne));
+  const done = Math.min(i + CONC, list.length);
+  if (done % 100 < CONC) {
+    await fs.writeFile(FILE, JSON.stringify(data, null, 2));   // 每 100 词存一次
     console.log(`  … ${done}/${list.length}（成功 ${ok} / 跳过 ${skip} / 失败 ${miss}）`);
   }
-  await new Promise(r => setTimeout(r, 120));                  // 别把人家 API 打爆
 }
 
 await fs.writeFile(FILE, JSON.stringify(data, null, 2));
