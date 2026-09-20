@@ -1,0 +1,37 @@
+name: 生成词表与发音
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '只处理前 N 个词（第一次测试填 200；全部处理就清空）'
+        required: false
+        default: '200'
+
+permissions:
+  contents: write        # 允许把生成结果提交回仓库
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      LIMIT: ${{ inputs.limit }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 1) 词表 -> words.json
+        run: node tools/from-list.mjs data/my-words.txt
+
+      - name: 2) 补英文释义与例句
+        run: node tools/enrich.mjs data/words.json
+
+      - name: 3) 抓真人发音
+        run: node tools/fetch-audio.mjs data/words.json
+
+      - name: 4) 提交回仓库
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          git commit -m "自动生成词表与音频" || echo "没有变化"
+          git push
