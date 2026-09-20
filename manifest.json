@@ -1,0 +1,9 @@
+{
+  "name": "CET-4 背单词",
+  "short_name": "背单词",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#111319",
+  "theme_color": "#111319",
+  "orientation": "any"
+}
