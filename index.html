@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#111319">
+<link rel="manifest" href="manifest.json">
+<title>CET 背单词</title>
+<style>
+:root{
+  --bg:#111319;--panel:#1a1e27;--line:#2a3040;--fg:#e8eaf0;--dim:#8b93a7;
+  --acc:#4f8cff;--ok:#3ddc97;--warn:#ffb454;--bad:#ff6b6b;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0;overscroll-behavior:none}
+body{
+  background:var(--bg);color:var(--fg);
+  font:16px/1.55 -apple-system,"PingFang SC",system-ui,sans-serif;
+  display:flex;flex-direction:column;
+  user-select:none;-webkit-user-select:none;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+button{font:inherit;color:var(--fg);background:var(--panel);border:1px solid var(--line);
+  border-radius:10px;padding:10px 14px;cursor:pointer;transition:transform .08s}
+button:active{transform:scale(.96)}
+.primary{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+.ok{background:rgba(61,220,151,.13);border-color:var(--ok);color:var(--ok)}
+.warn{background:rgba(255,180,84,.13);border-color:var(--warn);color:var(--warn)}
+.bad{background:rgba(255,107,107,.13);border-color:var(--bad);color:var(--bad)}
+.suggest{outline:2px solid #fff;outline-offset:2px}
+.hidden{display:none!important}
+
+header{display:flex;align-items:center;gap:8px;padding:8px 12px;font-size:13px;color:var(--dim);flex:0 0 auto}
+header .grow{flex:1}
+header button{padding:6px 10px;font-size:13px}
+
+main{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:12px;padding:8px 20px;text-align:center;overflow:hidden}
+#cueMain{font-size:24px;font-weight:600}
+#cueSub{color:var(--dim);font-size:14px;margin-top:4px}
+.play{font-size:15px;padding:8px 18px}
+#answer{display:flex;flex-direction:column;gap:3px;animation:fade .18s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+#ansWord{font-size:32px;font-weight:700;letter-spacing:2px}
+#ansPhon{color:var(--dim);font-size:15px}
+#ansTrans{font-size:17px}
+#ansDef{color:var(--dim);font-size:15px}
+#ansEx{color:var(--dim);font-size:14px;margin-top:4px}
+#verdict{margin-top:8px;font-size:14px;color:var(--warn)}
+
+#padWrap{flex:0 0 auto;height:40vh;position:relative;border-top:1px solid var(--line);background:#0d0f14}
+#pad{position:absolute;inset:0;width:100%;height:100%;display:block;
+  touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+#padHint{position:absolute;top:10px;left:0;right:0;text-align:center;color:#39404f;
+  font-size:13px;pointer-events:none}
+#padTools{position:absolute;left:0;right:0;bottom:10px;display:flex;gap:8px;
+  justify-content:center;pointer-events:none}
+#padTools button{pointer-events:auto;font-size:14px;padding:8px 16px;opacity:.94}
+
+footer{flex:0 0 auto;display:flex;gap:10px;padding:10px 16px 12px}
+footer button{flex:1;padding:15px;font-size:16px}
+
+dialog{border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--fg);
+  padding:18px;width:min(92vw,420px)}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+dialog label{display:block;margin:12px 0 4px;font-size:13px;color:var(--dim)}
+dialog select,dialog input{width:100%;padding:9px;border-radius:8px;border:1px solid var(--line);
+  background:#0f1219;color:var(--fg);font:inherit}
+dialog .row{display:flex;gap:8px;margin-top:16px}
+dialog .row button{flex:1}
+</style>
+</head>
+<body>
+
+<header>
+  <span id="stat">加载中…</span>
+  <span class="grow"></span>
+  <button id="btnMode">模式</button>
+  <button id="btnCfg">⚙︎</button>
+</header>
+
+<main>
+  <div id="cue">
+    <div id="cueMain">—</div>
+    <div id="cueSub"></div>
+  </div>
+  <button id="btnPlay" class="play">🔊 再听一次</button>
+  <div id="answer" class="hidden">
+    <div id="ansWord"></div>
+    <div id="ansPhon"></div>
+    <div id="ansTrans"></div>
+    <div id="ansDef"></div>
+    <div id="ansEx"></div>
+    <div id="verdict"></div>
+  </div>
+</main>
+
+<section id="padWrap">
+  <div id="padHint">用 Apple Pencil 在这里默写</div>
+  <canvas id="pad"></canvas>
+  <div id="padTools">
+    <button id="btnUndo">撤销</button>
+    <button id="btnClear">清空</button>
+    <button id="btnCheck" class="primary">检查</button>
+  </div>
+</section>
+
+<footer id="grades" class="hidden">
+  <button data-g="0" class="bad">不会</button>
+  <button data-g="1" class="warn">模糊</button>
+  <button data-g="2" class="ok">认识</button>
+</footer>
+
+<dialog id="cfgDlg">
+  <h3 style="margin:0 0 8px">设置</h3>
+  <label>提示模式</label>
+  <select id="cfgHintMode">
+    <option value="zh2en">看中文 → 默写英文</option>
+    <option value="listen">听发音 → 默写英文</option>
+    <option value="cloze">看例句挖空 → 默写单词</option>
+    <option value="en2zh">看英文 → 想中文</option>
+  </select>
+  <label>判分方式</label>
+  <select id="cfgRecog">
+    <option value="self">自评对照（始终可用）</option>
+    <option value="cloud">云端识别 + 自评兜底</option>
+  </select>
+  <label>Google Vision API Key（只存在本机）</label>
+  <input id="cfgKey" type="password" placeholder="AIza..." autocomplete="off">
+  <label>每日新词上限</label>
+  <input id="cfgNew" type="number" min="0" max="300">
+  <label style="display:flex;align-items:center;gap:8px;margin-top:14px;color:var(--fg)">
+    <input id="cfgFinger" type="checkbox" style="width:auto"> 允许手指书写（关闭=防手掌误触）
+  </label>
+  <div class="row">
+    <button id="btnExport">导出进度</button>
+    <button id="btnImport">导入进度</button>
+  </div>
+  <div class="row">
+    <button id="dlgClose" class="primary">完成</button>
+  </div>
+  <input id="fileImport" type="file" accept=".json" class="hidden">
+</dialog>
+
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+
+/* ================= 配置与进度 ================= */
+const LS_CFG='cet.cfg.v1', LS_PROG='cet.prog.v1', LS_META='cet.meta.v1';
+const cfg = Object.assign(
+  { hintMode:'zh2en', recog:'self', visionKey:'', newPerDay:20, allowFinger:false },
+  JSON.parse(localStorage.getItem(LS_CFG) || '{}'));
+let prog = JSON.parse(localStorage.getItem(LS_PROG) || '{}');
+let meta = Object.assign({ day:'', newCount:0 }, JSON.parse(localStorage.getItem(LS_META) || '{}'));
+const saveCfg  = () => localStorage.setItem(LS_CFG,  JSON.stringify(cfg));
+const saveProg = () => localStorage.setItem(LS_PROG, JSON.stringify(prog));
+const saveMeta = () => localStorage.setItem(LS_META, JSON.stringify(meta));
+// 用北京时间的日期做“今天”的边界
+const today = () => new Date(Date.now() + 8*3600e3).toISOString().slice(0,10);
+
+let WORDS = [], QUEUE = [], cur = null, revealed = false;
+
+/* ================= 音频 ================= */
+const audioEl = new Audio();
+audioEl.preload = 'auto';
+function playAudio(w) {
+  const src = w.audioLocal || w.audio?.us || w.audio?.uk;
+  if (src) { audioEl.src = src; audioEl.play().catch(() => tts(w.word)); }
+  else tts(w.word);
+}
+function tts(text) {
+  if (!('speechSynthesis' in window)) return;
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US'; u.rate = 0.9;
+  speechSynthesis.cancel(); speechSynthesis.speak(u);
+}
+
+/* ================= 手写画布（核心） ================= */
+const pad = $('pad'), ctx = pad.getContext('2d');
+let strokes = [], drawing = false, curStroke = null;
+
+function padSize() {
+  const r = pad.getBoundingClientRect();
+  const dpr = Math.min(window.devicePixelRatio || 1, 3);
+  pad.width  = Math.round(r.width  * dpr);
+  pad.height = Math.round(r.height * dpr);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.lineWidth = 3.5; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  ctx.strokeStyle = '#dfe5f2'; ctx.fillStyle = '#dfe5f2';
+  redraw();
+}
+function redraw() {
+  const r = pad.getBoundingClientRect();
+  ctx.clearRect(0, 0, r.width, r.height);
+  for (const s of strokes) drawPath(ctx, s, 3.5, '#dfe5f2');
+}
+function drawPath(c, s, lw, color) {
+  if (!s.length) return;
+  if (s.length === 1) {
+    c.beginPath(); c.arc(s[0].x, s[0].y, lw/2, 0, 7); c.fillStyle = color; c.fill(); return;
+  }
+  c.beginPath(); c.moveTo(s[0].x, s[0].y);
+  for (let i = 1; i < s.length; i++) c.lineTo(s[i].x, s[i].y);
+  c.strokeStyle = color; c.lineWidth = lw; c.stroke();
+}
+const pos = e => { const r = pad.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; };
+
+pad.addEventListener('pointerdown', e => {
+  // ★ 关键：默认只接受 Apple Pencil（鼠标也接受，方便电脑上调试），手指/手掌一律忽略
+  if (e.pointerType === 'touch' && !cfg.allowFinger) return;
+  e.preventDefault();
+  try { pad.setPointerCapture(e.pointerId); } catch (_) {}
+  drawing = true;
+  curStroke = [pos(e)];
+  strokes.push(curStroke);
+  $('padHint').classList.add('hidden');
+  redraw();
+});
+pad.addEventListener('pointermove', e => {
+  if (!drawing) return;
+  e.preventDefault();
+  // ★ getCoalescedEvents 拿到 iOS 高频上报的中间点，笔画才不会画成折线
+  const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
+  for (const ev of evs) curStroke.push(pos(ev));
+  redraw();
+});
+const endStroke = () => { drawing = false; curStroke = null; };
+pad.addEventListener('pointerup', endStroke);
+pad.addEventListener('pointercancel', endStroke);
+
+$('btnUndo').onclick  = () => { strokes.pop(); redraw(); };
+$('btnClear').onclick = () => { strokes = []; redraw(); };
+
+/* ================= 手写识别 ================= */
+// 导出成「白底黑字」的裁切图，OCR 才认得准（画布本身是深色的，必须重新渲染）
+function renderForOCR() {
+  if (!strokes.length) return null;
+  let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+  for (const s of strokes) for (const p of s) {
+    x0 = Math.min(x0, p.x); y0 = Math.min(y0, p.y);
+    x1 = Math.max(x1, p.x); y1 = Math.max(y1, p.y);
+  }
+  const m = 30, scale = 2;
+  const w = (x1 - x0) + m*2, h = (y1 - y0) + m*2;
+  const c = document.createElement('canvas');
+  c.width = Math.round(w*scale); c.height = Math.round(h*scale);
+  const x = c.getContext('2d');
+  x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height);
+  x.setTransform(scale, 0, 0, scale, 0, 0);
+  x.translate(-(x0 - m), -(y0 - m));
+  for (const s of strokes) drawPath(x, s, 3.5, '#000');
+  return c.toDataURL('image/png').split(',')[1];
+}
+
+async function cloudOCR() {
+  const b64 = renderForOCR();
+  if (!b64) return '';
+  const res = await fetch(
+    'https://vision.googleapis.com/v1/images:annotate?key=' + encodeURIComponent(cfg.visionKey), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ requests: [{
+      image: { content: b64 },
+      features: [{ type: 'DOCUMENT_TEXT_DETECTION' }],
+      imageContext: { languageHints: ['en'] }
+    }]})
+  });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const j = await res.json();
+  return (j.responses?.[0]?.fullTextAnnotation?.text || '').replace(/\s+/g, '').trim();
+}
+
+/* ================= 字符串比对 ================= */
+const norm = s => (s || '').toLowerCase().replace(/[^a-z]/g, '');
+function lev(a, b) {
+  const m = a.length, n = b.length;
+  if (!m) return n; if (!n) return m;
+  let prev = Array.from({ length: n+1 }, (_, i) => i), cur = new Array(n+1);
+  for (let i = 1; i <= m; i++) {
+    cur[0] = i;
+    for (let j = 1; j <= n; j++)
+      cur[j] = Math.min(prev[j]+1, cur[j-1]+1, prev[j-1] + (a[i-1] === b[j-1] ? 0 : 1));
+    [prev, cur] = [cur, prev];
+  }
+  return prev[n];
+}
+const similarity = (a, b) => {
+  const L = Math.max(a.length, b.length);
+  return L ? 1 - lev(a, b) / L : 0;
+};
+
+/* ================= 排程（简化版 SM-2） ================= */
+const DAY = 864e5;
+function grade(g) {
+  if (!cur) return;
+  const id = cur.id;
+  const r = prog[id] || { ef: 2.5, reps: 0, interval: 0, lapses: 0, seen: 0 };
+  r.seen++;
+  if (g === 0) {                       // 不会：重置，10 分钟后再来
+    r.lapses++; r.reps = 0; r.interval = 0;
+    r.ef = Math.max(1.3, r.ef - 0.2);
+    r.due = Date.now() + 10*60*1000;
+    QUEUE.push(id);                    // 本次会话内很快再见一次
+  } else {
+    r.reps++;
+    const q = g === 1 ? 3 : 5;
+    r.ef = Math.max(1.3, r.ef + (0.1 - (5-q)*(0.08 + (5-q)*0.02)));
+    if (r.reps === 1)      r.interval = g === 1 ? 1 : 2;
+    else if (r.reps === 2) r.interval = g === 1 ? 3 : 6;
+    else                   r.interval = Math.round(r.interval * r.ef);
+    r.due = Date.now() + r.interval * DAY;
+  }
+  prog[id] = r; saveProg();
+  $('grades').querySelectorAll('button').forEach(b => b.classList.remove('suggest'));
+  nextCard();
+}
+
+/* ================= 例句挖空 ================= */
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
+const blankRe = w => new RegExp('\\b' + w.word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[a-z]*\\b', 'gi');
+function clozeOf(w) {
+  if (!w.example?.en) return null;
+  if (!blankRe(w).test(w.example.en)) return null;   // 例句里找不到这个词（不规则变形）就退回中文提示
+  return esc(w.example.en).replace(blankRe(w), '<u style="color:#4f8cff">____</u>');
+}
+
+/* ================= 卡片流程 ================= */
+function buildQueue() {
+  const now = Date.now(), due = [], fresh = [];
+  for (const w of WORDS) {
+    const r = prog[w.id];
+    if (r) { if (r.due <= now) due.push(w.id); }
+    else fresh.push(w.id);
+  }
+  due.sort((a, b) => prog[a].due - prog[b].due);
+  const room = Math.max(0, (cfg.newPerDay | 0) - meta.newCount);
+  QUEUE = due.concat(fresh.slice(0, room));
+}
+
+function nextCard() {
+  if (!QUEUE.length) buildQueue();
+  if (!QUEUE.length) return showDone();
+
+  cur = WORDS.find(w => w.id === QUEUE.shift());
+  if (!cur) return nextCard();          // 词表里找不到（换过词表）就跳过
+  if (!prog[cur.id]) { meta.newCount++; saveMeta(); }
+
+  revealed = false;
+  strokes = []; redraw();
+  $('padHint').classList.remove('hidden');
+  $('answer').classList.add('hidden');
+  $('grades').classList.add('hidden');
+  $('padTools').classList.remove('hidden');
+  $('btnCheck').classList.remove('hidden');
+  $('verdict').textContent = '';
+
+  const w = cur;
+  if (cfg.hintMode === 'listen') {
+    $('cueMain').textContent = '🎧 听发音，写出单词';
+    $('cueSub').textContent = '写不出来就点「再听一次」';
+    playAudio(w);
+  } else if (cfg.hintMode === 'en2zh') {
+    $('cueMain').textContent = w.word;
+    $('cueSub').textContent = '想一想中文意思（可不写）';
+  } else if (cfg.hintMode === 'cloze') {
+    const s = clozeOf(w);
+    if (s) {
+      $('cueMain').innerHTML = s;
+      $('cueSub').textContent = '把挖掉的词默写出来（不自动发音，免得送答案）';
+    } else {
+      $('cueMain').textContent = (w.trans || []).join('；') || '（无释义）';
+      $('cueSub').textContent = '此词暂无例句，改用中文提示';
+    }
+  } else {
+    $('cueMain').textContent = (w.trans || []).join('；') || '（无释义）';
+    $('cueSub').textContent = w.pos || '';
+    // 中文提示模式下不自动发音，否则等于送答案
+  }
+  renderStat();
+}
+
+function showDone() {
+  cur = null;
+  $('cueMain').textContent = '🎉 今天的任务完成了';
+  $('cueSub').textContent = `累计已学 ${Object.keys(prog).length} 词 · 点 ⚙︎ 可调每日新词数`;
+  $('answer').classList.add('hidden');
+  $('grades').classList.add('hidden');
+  $('padTools').classList.add('hidden');
+  renderStat();
+}
+
+function renderStat() {
+  const now = Date.now();
+  const due = WORDS.filter(w => prog[w.id] && prog[w.id].due <= now).length;
+  $('stat').textContent = `已学 ${Object.keys(prog).length} · 待复习 ${due} · 今日新词 ${meta.newCount}`;
+}
+
+/* ================= 检查答案 ================= */
+async function onCheck() {
+  if (!cur || revealed) return;
+  revealed = true;
+  $('btnCheck').classList.add('hidden');
+  const w = cur, target = norm(w.word);
+
+  let guess = null, note = '';
+  if (cfg.recog === 'cloud') {
+    if (!cfg.visionKey) note = '未填 API Key，本次改用自评';
+    else {
+      $('verdict').textContent = '识别中…';
+      try { guess = norm(await cloudOCR()); }
+      catch (e) { note = '识别失败：' + e.message; }
+    }
+  }
+
+  $('ansWord').textContent  = w.word;
+  $('ansPhon').textContent  = [w.phonetic?.us, w.phonetic?.uk].filter(Boolean).join('   ');
+  $('ansTrans').textContent = (w.trans || []).join('；');
+  $('ansDef').textContent   = w.defEn || '';
+  $('ansEx').textContent    = w.example
+    ? `${w.example.en}${w.example.zh ? '　' + w.example.zh : ''}` : '';
+
+  let suggested = null;
+  if (guess) {
+    const acc = similarity(guess, target);
+    if (acc >= 0.999)     { note = `✅ 识别为「${guess}」，完全正确`; suggested = 2; }
+    else if (acc >= 0.6)  { note = `🟡 识别为「${guess}」（相似度 ${Math.round(acc*100)}%）`; suggested = 1; }
+    else                  { note = `❌ 识别为「${guess}」，差得较远`; suggested = 0; }
+  } else if (!note) {
+    note = strokes.length ? '对照答案，自己评分' : '没写字？对照答案自己评分';
+  }
+  $('verdict').textContent = note;
+
+  $('answer').classList.remove('hidden');
+  $('grades').classList.remove('hidden');
+  if (suggested !== null)
+    $('grades').querySelector(`[data-g="${suggested}"]`).classList.add('suggest');
+
+  playAudio(w);
+}
+
+/* ================= 事件绑定 ================= */
+$('btnPlay').onclick  = () => cur && playAudio(cur);
+$('btnCheck').onclick = onCheck;
+$('grades').querySelectorAll('button').forEach(b => {
+  b.onclick = () => grade(Number(b.dataset.g));
+});
+$('btnMode').onclick = () => {
+  const order = ['zh2en', 'listen', 'cloze', 'en2zh'];
+  cfg.hintMode = order[(order.indexOf(cfg.hintMode) + 1) % order.length];
+  saveCfg(); syncCfgUI(); nextCard();
+};
+
+/* ================= 设置面板 ================= */
+function syncCfgUI() {
+  $('cfgHintMode').value = cfg.hintMode;
+  $('cfgRecog').value    = cfg.recog;
+  $('cfgKey').value      = cfg.visionKey;
+  $('cfgNew').value      = cfg.newPerDay;
+  $('cfgFinger').checked = cfg.allowFinger;
+  $('btnMode').textContent = { zh2en:'看中文写', listen:'听写', cloze:'例句挖空', en2zh:'看英想中' }[cfg.hintMode];
+}
+$('btnCfg').onclick = () => { syncCfgUI(); $('cfgDlg').showModal(); };
+$('dlgClose').onclick = () => {
+  cfg.hintMode   = $('cfgHintMode').value;
+  cfg.recog      = $('cfgRecog').value;
+  cfg.visionKey  = $('cfgKey').value.trim();
+  cfg.newPerDay  = Math.max(0, parseInt($('cfgNew').value, 10) || 0);
+  cfg.allowFinger = $('cfgFinger').checked;
+  saveCfg(); syncCfgUI(); nextCard(); $('cfgDlg').close();
+};
+$('btnExport').onclick = () => {
+  const blob = new Blob([JSON.stringify({ prog, meta, exportedAt: Date.now() }, null, 2)],
+    { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `cet-progress-${today()}.json`;
+  a.click();
+};
+$('btnImport').onclick = () => $('fileImport').click();
+$('fileImport').onchange = async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try {
+    const j = JSON.parse(await f.text());
+    if (j.prog) { prog = j.prog; saveProg(); }
+    if (j.meta) { meta = j.meta; saveMeta(); }
+    alert('导入成功'); nextCard();
+  } catch (err) { alert('导入失败：' + err.message); }
+  e.target.value = '';
+};
+
+/* ================= iPad 防手势 ================= */
+['gesturestart', 'gesturechange', 'gestureend'].forEach(t =>
+  document.addEventListener(t, e => e.preventDefault()));
+document.addEventListener('dblclick', e => e.preventDefault());
+window.addEventListener('resize', () => setTimeout(padSize, 120));
+window.addEventListener('orientationchange', () => setTimeout(padSize, 300));
+
+/* ================= 启动 ================= */
+(async function init() {
+  try {
+    const res = await fetch('data/words.json', { cache: 'no-cache' });
+    const data = await res.json();
+    WORDS = data.words || [];
+  } catch (e) {
+    $('cueMain').textContent = '词表加载失败';
+    $('cueSub').textContent = '检查 data/words.json 是否存在';
+    return;
+  }
+  if (meta.day !== today()) { meta = { day: today(), newCount: 0 }; saveMeta(); }
+  padSize();
+  syncCfgUI();
+  nextCard();
+  if ('serviceWorker' in navigator)
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+})();
+</script>
+</body>
+</html>
