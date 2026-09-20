@@ -1,0 +1,3410 @@
+{
+  "meta": {
+    "name": "CET-4 核心词（课程顺序）",
+    "version": "1.0",
+    "count": 200,
+    "builtAt": "2026-09-20T10:03:59.706Z"
+  },
+  "words": [
+    {
+      "id": "cet4-space",
+      "word": "space",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-universe",
+      "word": "universe",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-unite",
+      "word": "unite",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-reunite",
+      "word": "reunite",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-union",
+      "word": "union",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-diverse",
+      "word": "diverse",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-convert",
+      "word": "convert",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-reverse",
+      "word": "reverse",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-anniversary",
+      "word": "anniversary",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-annual",
+      "word": "annual",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-controversy",
+      "word": "controversy",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-contrary",
+      "word": "contrary",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-contrast",
+      "word": "contrast",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-nasty",
+      "word": "nasty",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-astronaut",
+      "word": "astronaut",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-heaven",
+      "word": "heaven",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-satellite",
+      "word": "satellite",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-moon",
+      "word": "moon",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-develop",
+      "word": "develop",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-evolve",
+      "word": "evolve",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-revolve",
+      "word": "revolve",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-involve",
+      "word": "involve",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-advance",
+      "word": "advance",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-ahead",
+      "word": "ahead",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-ongoing",
+      "word": "ongoing",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-improve",
+      "word": "improve",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-approve",
+      "word": "approve",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-proof",
+      "word": "proof",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-enhance",
+      "word": "enhance",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-enable",
+      "word": "enable",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-enlarge",
+      "word": "enlarge",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-enrich",
+      "word": "enrich",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-fasten",
+      "word": "fasten",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-tight",
+      "word": "tight",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-buckle",
+      "word": "buckle",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-watertight",
+      "word": "watertight",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-loose",
+      "word": "loose",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-undo",
+      "word": "undo",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-form",
+      "word": "form",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-formal",
+      "word": "formal",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-uniform",
+      "word": "uniform",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-formation",
+      "word": "formation",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-reform",
+      "word": "reform",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-format",
+      "word": "format",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-conform",
+      "word": "conform",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-comply",
+      "word": "comply",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-formulate",
+      "word": "formulate",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-formula",
+      "word": "formula",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-program",
+      "word": "program",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-perform",
+      "word": "perform",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-drill",
+      "word": "drill",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-inform",
+      "word": "inform",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-notify",
+      "word": "notify",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-noticeable",
+      "word": "noticeable",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-coast",
+      "word": "coast",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-toast",
+      "word": "toast",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-roast",
+      "word": "roast",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-sail",
+      "word": "sail",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-shore",
+      "word": "shore",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-island",
+      "word": "island",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-inland",
+      "word": "inland",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-beach",
+      "word": "beach",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-bench",
+      "word": "bench",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-harbor",
+      "word": "harbor",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-embrace",
+      "word": "embrace",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-bay",
+      "word": "bay",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-shelter",
+      "word": "shelter",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-shade",
+      "word": "shade",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-shave",
+      "word": "shave",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-belt",
+      "word": "belt",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-bond",
+      "word": "bond",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-bind",
+      "word": "bind",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-blind",
+      "word": "blind",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-deaf",
+      "word": "deaf",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-bend",
+      "word": "bend",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-twist",
+      "word": "twist",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-blend",
+      "word": "blend",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-mix",
+      "word": "mix",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-stir",
+      "word": "stir",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-mountain",
+      "word": "mountain",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-fountain",
+      "word": "fountain",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-profound",
+      "word": "profound",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-foundation",
+      "word": "foundation",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-base",
+      "word": "base",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-basic",
+      "word": "basic",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-basis",
+      "word": "basis",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-mount",
+      "word": "mount",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-amount",
+      "word": "amount",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-soar",
+      "word": "soar",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-ascend",
+      "word": "ascend",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-descend",
+      "word": "descend",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-decline",
+      "word": "decline",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-incline",
+      "word": "incline",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-ancestor",
+      "word": "ancestor",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-ancient",
+      "word": "ancient",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-consensus",
+      "word": "consensus",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-proceed",
+      "word": "proceed",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-procession",
+      "word": "procession",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-troop",
+      "word": "troop",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-process",
+      "word": "process",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-procedure",
+      "word": "procedure",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-access",
+      "word": "access",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-assess",
+      "word": "assess",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-exceed",
+      "word": "exceed",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-beyond",
+      "word": "beyond",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-surplus",
+      "word": "surplus",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-extra",
+      "word": "extra",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-excess",
+      "word": "excess",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-success",
+      "word": "success",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-succeed",
+      "word": "succeed",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-successor",
+      "word": "successor",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-excel",
+      "word": "excel",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-stride",
+      "word": "stride",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-wander",
+      "word": "wander",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-crawl",
+      "word": "crawl",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-climb",
+      "word": "climb",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-progress",
+      "word": "progress",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-congress",
+      "word": "congress",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-aggressive",
+      "word": "aggressive",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-move",
+      "word": "move",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-mobile",
+      "word": "mobile",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-static",
+      "word": "static",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-motive",
+      "word": "motive",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-motivate",
+      "word": "motivate",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-remove",
+      "word": "remove",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-emotion",
+      "word": "emotion",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-rational",
+      "word": "rational",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-ratio",
+      "word": "ratio",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-rate",
+      "word": "rate",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-percentage",
+      "word": "percentage",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-remote",
+      "word": "remote",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-promote",
+      "word": "promote",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-action",
+      "word": "action",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-deed",
+      "word": "deed",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-behave",
+      "word": "behave",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-active",
+      "word": "active",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-react",
+      "word": "react",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-exact",
+      "word": "exact",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-actual",
+      "word": "actual",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-practical",
+      "word": "practical",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-virtual",
+      "word": "virtual",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-fragment",
+      "word": "fragment",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-somewhat",
+      "word": "somewhat",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-fraction",
+      "word": "fraction",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-portion",
+      "word": "portion",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-proportion",
+      "word": "proportion",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-skeleton",
+      "word": "skeleton",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-frame",
+      "word": "frame",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-framework",
+      "word": "framework",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-flame",
+      "word": "flame",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-burn",
+      "word": "burn",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-flash",
+      "word": "flash",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-flesh",
+      "word": "flesh",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-fresh",
+      "word": "fresh",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-refresh",
+      "word": "refresh",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-flourish",
+      "word": "flourish",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-flour",
+      "word": "flour",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-powder",
+      "word": "powder",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-cure",
+      "word": "cure",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-curious",
+      "word": "curious",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-accurate",
+      "word": "accurate",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-secure",
+      "word": "secure",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-rescue",
+      "word": "rescue",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-injure",
+      "word": "injure",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-wound",
+      "word": "wound",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-harm",
+      "word": "harm",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-hazard",
+      "word": "hazard",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-danger",
+      "word": "danger",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-stake",
+      "word": "stake",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-risk",
+      "word": "risk",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-gamble",
+      "word": "gamble",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-bet",
+      "word": "bet",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-current",
+      "word": "current",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-currency",
+      "word": "currency",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-rental",
+      "word": "rental",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-lease",
+      "word": "lease",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-release",
+      "word": "release",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-recently",
+      "word": "recently",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-modern",
+      "word": "modern",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-era",
+      "word": "era",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-up-to-date",
+      "word": "up-to-date",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-outdated",
+      "word": "outdated",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-stale",
+      "word": "stale",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-fashion",
+      "word": "fashion",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-contemporary",
+      "word": "contemporary",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-temple",
+      "word": "temple",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-temporary",
+      "word": "temporary",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-abundant",
+      "word": "abundant",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-ample",
+      "word": "ample",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-mass",
+      "word": "mass",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-massive",
+      "word": "massive",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-massage",
+      "word": "massage",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-numerous",
+      "word": "numerous",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-multiply",
+      "word": "multiply",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-gang",
+      "word": "gang",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-band",
+      "word": "band",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-bandage",
+      "word": "bandage",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-sort",
+      "word": "sort",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-resort",
+      "word": "resort",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "id": "cet4-flock",
+      "word": "flock",
+      "phonetic": {
+        "us": "",
+        "uk": ""
+      },
+      "audioLocal": "",
+      "pos": "",
+      "trans": [],
+      "defEn": "",
+      "example": null,
+      "level": 4,
+      "tags": [
+        "core"
+      ]
+    }
+  ]
+}
